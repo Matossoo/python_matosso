@@ -1,52 +1,22 @@
 # python_matosso
-💻 Projetos em Python – Estudos e Passatempo
-📌 Sobre o Repositório
+🌐 Abridor de Navegador em Python
+📌 Descrição
 
-Este repositório contém três programas desenvolvidos em Python como forma de estudo e prática de lógica de programação.
-Os projetos foram criados tanto para aprendizado quanto para passatempo, explorando diferentes funcionalidades da linguagem.
+Este projeto é um programa simples desenvolvido em Python que permite abrir automaticamente o navegador padrão do computador através de um menu interativo no terminal.
 
-📂 Projetos Incluídos
-🌐 1. Gerenciador de Abas do Navegador
+O usuário pode escolher entre abrir sites pré-definidos ou inserir um link personalizado.
 
-Programa que permite abrir abas automaticamente no navegador padrão do computador.
+🚀 Funcionalidades
 
-Funcionalidades:
+✅ Abrir Google
 
-Abrir sites pré-definidos
+✅ Abrir YouTube
 
-Abrir site personalizado digitado pelo usuário
+✅ Abrir site digitado pelo usuário
 
-Menu interativo
+✅ Menu interativo
 
-Uso da biblioteca webbrowser
-
-🎮 2. Projeto de Passatempo #1
-
-Programa desenvolvido para praticar:
-
-Estruturas condicionais (if/elif)
-
-Estruturas de repetição (while)
-
-Entrada de dados com input()
-
-Manipulação de variáveis
-
-(Você pode colocar aqui o nome específico do seu projeto depois)
-
-🧠 3. Projeto de Passatempo #2
-
-Código criado para explorar lógica e criatividade em Python.
-
-Objetivos trabalhados:
-
-Organização do código
-
-Estrutura modular
-
-Prática de resolução de problemas
-
-Aprimoramento da lógica
+✅ Execução contínua até o usuário sair
 
 🛠️ Tecnologias Utilizadas
 
@@ -54,30 +24,50 @@ Python 3
 
 Biblioteca padrão webbrowser
 
-Terminal / Prompt de Comando
+📂 Estrutura do Projeto
+abrir_navegador.py
+README.md
+💻 Como Executar
 
-🚀 Como Executar
+1️⃣ Instale o Python 3
+2️⃣ Execute o arquivo no terminal:
 
-Instale o Python 3.
+python abrir_navegador.py
+📜 Código Principal
+import webbrowser
 
-Clone o repositório:
+while True:
+    print("\n=== MENU NAVEGADOR ===")
+    print("1 - Abrir Google")
+    print("2 - Abrir YouTube")
+    print("3 - Abrir site personalizado")
+    print("0 - Sair")
 
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    opcao = input("Escolha uma opção: ")
 
-Execute o arquivo desejado:
+    if opcao == "1":
+        webbrowser.open("https://www.google.com")
+    elif opcao == "2":
+        webbrowser.open("https://www.youtube.com")
+    elif opcao == "3":
+        site = input("Digite o link completo: ")
+        webbrowser.open(site)
+    elif opcao == "0":
+        print("Encerrando programa...")
+        break
+    else:
+        print("Opção inválida!")
+🎯 Objetivo do Projeto
 
-python nome_do_arquivo.py
-🎯 Objetivo
+Este projeto foi criado para praticar:
 
-Este repositório foi criado para:
+Estruturas de repetição (while)
 
-Praticar programação
+Condicionais (if/elif)
 
-Melhorar lógica computacional
+Interação com o usuário via terminal
 
-Testar ideias simples
-
-Evoluir como desenvolvedor
+Uso de bibliotecas padrão do Python
 
 👨‍💻 Autor
 
